@@ -1,14 +1,31 @@
-# Flask JSON Database Application
+# TaskFlow - Flask Task Management Application
 
-A simple Flask application that uses a JSON file as a database, with full CRUD (Create, Read, Update, Delete) operations. This application is designed to be deployed on Azure App Service.
+A professional Flask task management application that uses a JSON file as a database. Features include user management, task assignment, comments, and full CRUD operations. Perfect for deployment on Azure App Service.
+
+## 🚀 Quick Start
+
+**Clone and run in 3 steps:**
+
+```bash
+git clone https://github.com/udayrealm/appservicejsonapp.git
+cd appservicejsonapp
+pip install -r requirements.txt && python app.py
+```
+
+Then open `http://localhost:5000` in your browser!
 
 ## Features
 
-- ✅ Create, Read, Update, and Delete items
-- 📝 JSON file-based database (no external database required)
-- 🎨 Modern, responsive web interface
-- 🔄 RESTful API endpoints
-- 💚 Health check endpoint
+- ✅ **Task Management** - Create, Read, Update, and Delete tasks
+- 👥 **User Management** - Create and manage users
+- 📋 **Task Assignment** - Assign tasks to specific users
+- 💬 **Comments System** - Add comments to tasks for collaboration
+- 📝 **JSON Database** - No external database required, uses JSON file
+- 🎨 **Modern UI** - Professional, responsive web interface
+- 🔄 **RESTful API** - Complete API for all operations
+- 🔍 **Task Filtering** - Filter by All, Pending, or Completed
+- 📊 **Statistics Dashboard** - View task statistics in real-time
+- 💚 **Health Check** - Built-in health monitoring endpoint
 
 ## Project Structure
 
@@ -23,34 +40,62 @@ A simple Flask application that uses a JSON file as a database, with full CRUD (
 └── README.md          # This file
 ```
 
-## Local Development
+## Quick Start - Running the App
+
+### For Sharing with Others
+
+**Repository Link:** `https://github.com/udayrealm/appservicejsonapp.git`
 
 ### Prerequisites
 
 - Python 3.8 or higher
-- pip
+- pip (usually comes with Python)
+- Git (optional, for cloning)
 
-### Setup
+### Quick Setup Steps
 
-1. Clone or download this repository
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/udayrealm/appservicejsonapp.git
+   cd appservicejsonapp
+   ```
 
-2. Create a virtual environment (optional but recommended):
+   Or download as ZIP from GitHub and extract it.
+
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Run the application:**
+   ```bash
+   python app.py
+   ```
+
+4. **Open your browser:**
+   Navigate to `http://localhost:5000`
+
+That's it! The app will start and you can start managing tasks.
+
+### Detailed Setup (Optional)
+
+If you want to use a virtual environment (recommended):
+
+**Windows:**
 ```bash
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-3. Install dependencies:
-```bash
+venv\Scripts\activate
 pip install -r requirements.txt
-```
-
-4. Run the application:
-```bash
 python app.py
 ```
 
-5. Open your browser and navigate to `http://localhost:5000`
+**Mac/Linux:**
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python app.py
+```
 
 ## API Endpoints
 
